@@ -16,10 +16,8 @@ CMD ["python", "train.py", "-m", "yolo11m.pt"]
 
 
 # set 1
-# docker run -it --rm --gpus all --mount type=bind,source=C:/Users/kleuv/Productie/dodo_ai/dodo_analytics/runs,target=/ultralytics/runs --mount type=bind,source=C:/Users/kleuv/Productie/dodo_ai/dodo_analytics/datasets/bbox/unified_dataset,target=/ultralytics/datasets/bbox/unified_dataset dodo
-
 
 # /ultralytics/datasets/bbox/unified_dataset
-# docker run -it --rm --gpus all --mount type=bind,source=/home/gersondekleuver/runs,target=/ultralytics/runs --mount type=bind,source=/home/gersondekleuver/unified_dataset_small,target=/ultralytics/datasets/bbox/unified_dataset dodo
+# docker run -it --rm --gpus all --mount type=bind,source=/home/runs,target=/ultralytics/runs --mount type=bind,source=<command> dodo
 
 # docker build . --rm --tag "dodo"
